@@ -33,6 +33,11 @@
 
 <body>
 
+<div class="logo">
+    <span class="logoleft"></span>
+    <span class="logoright"></span>
+</div>
+
 <div class="reveal">
 
     <!-- Used to fade in a background when a specific slide state is reached -->
@@ -44,17 +49,33 @@
             <h1>headline 1</h1>
             <h2>headline 2</h2>
             <h3>headline 3</h3>
-            <h3>headline 4</h3>
-            <h3>headline 5</h3>
-            <h3>headline 6</h3>
+            <h4>headline 4</h4>
+            <h5>headline 5</h5>
+            <h6>headline 6</h6>
         </section>
 
         <section>
-            <h1>Reveal.js</h1>
+            <section>
+                <h3>Grundlagen JPA</h3>
 
-            <h3>HTML Presentations Made Easy</h3>
+                <ul>
+                    <li>No order here</li>
+                    <li>Or here</li>
+                    <li>Or here</li>
+                    <li>Or here</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Nested slide</h3>
+                <p>lorem ipsum</p>
+            </section>
         </section>
 
+        <section>
+            <h2>Links</h2>
+            <a href="#">Ein Link</a>
+        </section>
     </div>
 
     <!-- The navigational controls UI -->
@@ -81,8 +102,9 @@
         controls:true,
         progress:true,
         history:true,
+        overview:true,
 
-        theme:Reveal.getQueryHash().theme || 'ssb', // available themes are in /css/theme
+        theme:Reveal.getQueryHash().theme || 'pd', // available themes are in /css/theme
         transition:Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
 
         // Optional libraries used to extend on reveal.js
