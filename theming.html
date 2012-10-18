@@ -47,7 +47,9 @@
     <div class="slides">
         <section>
             <h1>headline 1</h1>
+
             <h2>headline 2</h2>
+
             <h3>headline 3</h3>
             <h4>headline 4</h4>
             <h5>headline 5</h5>
@@ -68,6 +70,7 @@
 
             <section>
                 <h3>Nested slide</h3>
+
                 <p>lorem ipsum</p>
             </section>
         </section>
@@ -81,7 +84,7 @@
             <h2>Source Code</h2>
             <pre><code>
                 var me = function () {
-                    return false;
+                return false;
                 }
             </code></pre>
         </section>
@@ -108,32 +111,32 @@
     // Full list of configuration options available here:
     // https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
-        controls:true,
-        progress:true,
-        history:true,
-        overview:true,
+        controls: true,
+        progress: true,
+        history: true,
+        overview: true,
 
-        theme:Reveal.getQueryHash().theme || 'pd', // available themes are in /css/theme
-        transition:Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+        theme: Reveal.getQueryHash().theme || 'ssb', // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
 
         // Optional libraries used to extend on reveal.js
-        dependencies:[
-            { src:'lib/js/highlight.js', async:true, callback:function () {
+        dependencies: [
+            { src: 'lib/js/highlight.js', async: true, callback: function () {
                 window.hljs.initHighlightingOnLoad();
             } },
-            { src:'lib/js/classList.js', condition:function () {
+            { src: 'lib/js/classList.js', condition: function () {
                 return !document.body.classList;
             } },
-            { src:'lib/js/showdown.js', condition:function () {
+            { src: 'lib/js/showdown.js', condition: function () {
                 return !!document.querySelector('[data-markdown]');
             } },
-            { src:'lib/js/data-markdown.js', condition:function () {
+            { src: 'lib/js/data-markdown.js', condition: function () {
                 return !!document.querySelector('[data-markdown]');
             } },
-            { src:'/socket.io/socket.io.js', async:true, condition:function () {
+            { src: '/socket.io/socket.io.js', async: true, condition: function () {
                 return window.location.host === 'localhost:1947';
             } },
-            { src:'plugin/speakernotes/client.js', async:true, condition:function () {
+            { src: 'plugin/speakernotes/client.js', async: true, condition: function () {
                 return window.location.host === 'localhost:1947';
             } }
         ]
