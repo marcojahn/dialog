@@ -27,7 +27,7 @@ app.configure(function() {
 });
 
 app.get("/", function(req, res) {
-	fs.createReadStream(opts.baseDir + '/index-example.html').pipe(res);
+	fs.createReadStream(opts.baseDir + '/index.html').pipe(res);
 });
 
 app.get("/notes/:socketId", function(req, res) {
