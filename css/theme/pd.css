@@ -71,6 +71,46 @@ body {
 }
 
 /*********************************************
+ * INTRO
+**********************************************/
+.intro .logo {
+    display: none;
+}
+
+.intro .reveal h1,
+.intro .reveal h2,
+.intro .reveal h3 {
+    color: #fff;
+}
+
+.intro .state-background {
+    background: transparent url('img/pd/doorpage_bg.png') center repeat-x;
+    background-size: 100%;
+}
+
+.reveal section span.intro img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 612px;
+    height: 279px;
+    margin-left: -306px;
+
+    background: none;
+    border: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+/*********************************************
  * HEADERS
  *********************************************/
 

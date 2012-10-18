@@ -58,6 +58,31 @@ body {
 }
 
 /*********************************************
+ * INTRO
+**********************************************/
+
+.reveal section span.intro img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 528px;
+    height: 300px;
+
+    background: none;
+    border: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+/*********************************************
  * HEADERS
  *********************************************/
 
@@ -106,30 +131,34 @@ body {
     background: hsla(201,73%,45%,1);
 }
 
+/*********************************************
+ * LISTS
+ *********************************************/
+/*ul {
+    list-style: none;
+}
+li {
+    position: relative;
+}
+li:before {
+    position: absolute;
+    top: 8px;
+    margin: 2px 0 0 -12px;
+    / * accommodate Camino * /
+    vertical-align: middle;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: hsla(201,73%,45%,1);
+    content: "";
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}*/
 
 /*********************************************
  * IMAGES
  *********************************************/
-
-.reveal section span.intro img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-    background: none;
-    border: none;
-
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
-    transition: none;
-}
-
 .reveal section img {
     margin: 30px 0 0 0;
     background: rgba(255,255,255,0.12);
