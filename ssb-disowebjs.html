@@ -61,6 +61,7 @@
                     <li class="fragment">what disoweb needs</li>
                     <li class="fragment">conventions for providing code</li>
                     <li class="fragment">introduction in project structure and setup</li>
+                    <li class="fragment">what ExtJS covers</li>
                     <li class="fragment">disoweb basics</li>
                 </ul>
             </section>
@@ -73,6 +74,7 @@
                     <li>maintainability</li>
                     <li>understandable</li>
                     <li>extendable</li>
+                    <li>long application lifetime</li>
                 </ul>
             </section>
 
@@ -81,10 +83,21 @@
 
                 <p>To fullfill these requirements the following standards are introduced.</p>
                 <ul>
-                    <li>test your code with <a href="https://github.com/pivotal/jasmine">jasmine</a></li>
+                    <li>target plattform is Firefox 3.6
+                        <ul>
+                            <li>think about memory consumption and lookups.</li>
+                            <li>performance always matters.</li>
+                            <li>THERE IS NO JIT COMPILER IN FF 3.6</li>
+                        </ul><br />
+                    </li>
+                    <li>test your code with <a href="https://github.com/pivotal/jasmine">jasmine</a><br />
+                        <blockquote cite="http://hamletdarcy.blogspot.de/2009/06/forgotten-refactorings.html">
+                            ... don’t touch anything that doesn’t have coverage. Otherwise, you’re not refactoring; you’re just changing shit.<br />– Hamlet D’Arcy
+                        </blockquote>
+                    </li>
                     <li>document you code with <a href="https://github.com/senchalabs/jsduck">jsduck</a></li>
                     <li>read and use the coding conventions for writing code.</li>
-                    <li>avoid workarounds; provide solutions.</li>
+                    <li>avoid workarounds; provide solutions. (<i>understand what you are doing</i>)</li>
                 </ul>
             </section>
 
@@ -95,8 +108,34 @@
                 <ul>
                     <li>for IntelliJ you can find live and file templates in confluence.</li>
                     <li>we use IntelliJ for frontend development with hot deployment of client code.</li>
-                    <li>tools loke jsduck and jslint are downloadable from confluence to be used during development.</li>
+                    <li>tools like jsduck and jslint are provided as ready to run from confluence.</li>
                 </ul>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>ExtJS</h3>
+                <h4>What ExtJS Covers</h4>
+
+                <ul>
+                    <li><a href="https://app.ssb-diso.de/confluence/display/APADEV/ExtJS+4+MVC+Pattern">MVC</a>
+                    <ul>
+                        <li>we use a resource bound approach</li>
+                        <li>a resource has a controller has multiple views</li>
+                    </ul>
+                    </li>
+                    <li>JSON LazyLoading</li>
+                    <li>Dependency Management within your code.</li>
+                </ul>
+            </section>
+            <section>
+                <!-- more and code examples from confluence -->
+                <h3>MVC</h3>
+                <p>There is only one controller for a view.<br />
+                    <img src="./img/ssb/disowebjs/View-Events.png" />
+                </p>
+                
             </section>
         </section>
 
@@ -109,6 +148,7 @@
                 <li>exceptionhandling (natively integrated with Ajax/Ajax Proxy)</li>
                 <li>customized application bootstrap</li>
                 <li>multilanguage</li>
+                <li>patching</li>
                 <li>more...</li>
             </ul>
         </section>
